@@ -9,7 +9,7 @@ function App() {
           <Header />
           <Button />
       </div>
-  );
+  )
 }
 
-export default App;
+export default App

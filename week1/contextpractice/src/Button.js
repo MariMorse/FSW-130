@@ -3,8 +3,9 @@ import ThemeContext from "./themeContext"
 
 class Button extends Component {
     render() {
+        const theme = this.context
         return (
-            <button className="light-theme">Change Themes</button>
+            <button className={`${theme}-theme`}>Switch Themes</button>
         )
     }
 }
