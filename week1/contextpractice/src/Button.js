@@ -1,4 +1,5 @@
 import React, {Component} from "react"
+import ThemeContext from "./themeContext"
 
 class Button extends Component {
     render() {
@@ -7,5 +8,7 @@ class Button extends Component {
         )
     }
 }
+
+Button.contextType = ThemeContext
 
 export default Button
