@@ -1,11 +1,14 @@
-import React from 'react';
-import ReactDOM from 'react-dom'
+import React from 'react'
+
+import Header from "./Header"
+import Button from "./Button"
 
 function App() {
   return (
-    <div>
-      
-    </div>
+      <div>
+          <Header />
+          <Button />
+      </div>
   );
 }
 
