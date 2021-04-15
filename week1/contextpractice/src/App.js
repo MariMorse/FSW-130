@@ -1,16 +1,15 @@
 import React from 'react'
 import './styles.css'
 
-import Main from "./Main"
+import Header from "./Header"
 import Button from "./Button"
-import Footer from "./Footer"
+
 
 function App() {
   return (
       <div>
-          <Main />
+          <Header />
           <Button />
-          <Footer />
       </div>
   )
 }

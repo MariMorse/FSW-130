@@ -1,5 +1,5 @@
 import React, {Component} from "react"
-import ThemeContext from "./themeContext"
+import ThemeContext from "./ThemeContext"
 
 class Header extends Component {
     render() {
