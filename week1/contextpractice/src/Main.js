@@ -1,7 +1,7 @@
 import React, {Component} from "react"
 import ThemeContext from "./themeContext"
 
-class Main extends Component {
+class Header extends Component {
     render() {
         const theme = this.context
         return (
@@ -12,6 +12,6 @@ class Main extends Component {
     }
 }
 
-Main.contextType = ThemeContext
+Header.contextType = ThemeContext
 
-export default Main
+export default Header
