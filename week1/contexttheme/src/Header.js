@@ -1,9 +1,17 @@
 import React, {Component} from "react"
+import ThemeContext from "./themeContext"
 
-class Button extends Component {
+class Header extends Component {
+    static contextType = ThemeContext
     render() {
+        const theme = this.context
         return(
-            <button className="light-theme">Switch Theme</button>
+
+            <header className={`${theme}-theme`}>
+                <h2>{theme === "light" ? "Light" : "Dark"} Theme</h2>
+            </header>
         )
     }
 }
+
+export default Header
