@@ -1,13 +1,16 @@
 import React from "react"
 
-
-
+import NavBar from "../components/NavBar"
+import Main from "../components/Main"
+import Footer from "../components/Footer"
+import "../apps/App.css"
 
 function App() {
     return (
-        <div>
+        <div className="container">
+            <NavBar />
             <Main />
-            
+            <Footer />
         </div>
     )
 }
