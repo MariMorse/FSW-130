@@ -1,16 +1,7 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-header {
-  padding: 10px;
-}
-
-button {
-  padding: 10px;
-  border: none;
-  margin: 10px;
+.container {
+  width: 600px;
+  margin: auto;
+  border-radius: 20px;
 }
 
 .dark-theme {
@@ -21,4 +12,13 @@ button {
 .light-theme {
   background-color: whitesmoke;
   color: #333333;
+}
+
+.common {
+  text-align: center;
+  padding: 20px;
+}
+
+.nav-padding {
+  padding: 10px;
 }
