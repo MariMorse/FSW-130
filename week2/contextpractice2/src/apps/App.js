@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import '../apps/App.css'
-import {AnimalContextConsumer} from '../bookContext'
-import Animals from '../components/Books'
+import {BookContextConsumer} from '../bookContext'
+import Books from '../components/Books'
 
 class App extends Component {
     constructor() {
@@ -19,35 +19,35 @@ class App extends Component {
 
     clearForm() {
         this.setState({
-            newAnimal: ''
+            newBook: ''
         })
     }
 
     render() {
         return (
-            <AnimalContextConsumer>
+            <BookContextConsumer>
                 {context => (
                     <div className='content'>
                         <h2>Context Practice 2</h2>
                         <div className='form'>
                             <input
                                 type='text'
-                                name='newAnimal'
-                                placeholder='Type of Animal'
-                                value={this.state.newAnimal}
+                                name='newBook'
+                                placeholder='Name of Book'
+                                value={this.state.newBook}
                                 onChange={this.handleChange}
                             />
                             <button onClick={() => {
-                                context.addAnimal(this.state.newAnimal); 
+                                context.addAnimal(this.state.newBook); 
                                 this.clearForm()}
                                 }>Add</button>
                         </div>
                         <div>
-                            <Animals />
+                            <Books />
                         </div>
                     </div>
                 )}
-            </AnimalContextConsumer>
+            </BookContextConsumer>
         )
     }
 }
