@@ -8,7 +8,7 @@ class App extends Component {
         super()
 
         this.state = {
-            newAnimal: ''
+            newBook: ''
         }
     }
 
@@ -38,7 +38,7 @@ class App extends Component {
                                 onChange={this.handleChange}
                             />
                             <button onClick={() => {
-                                context.addAnimal(this.state.newBook); 
+                                context.addBook(this.state.newBook); 
                                 this.clearForm()}
                                 }>Add</button>
                         </div>

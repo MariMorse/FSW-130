@@ -14,7 +14,7 @@ class BookContextProvider extends Component {
         }
     }
 
-    addAnimal = (book) => {
+    addBook = (book) => {
         let bookEntry = {
             'book': book
         }

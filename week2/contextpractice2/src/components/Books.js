@@ -6,7 +6,7 @@ function Books() {
         <BookContextConsumer>
             {context => (
                 <div>
-                    {context.bookss.map((item, index) => 
+                    {context.book.map((item, index) => 
                         <div key={index} className='book'>
                             {item.book}
                         </div>
