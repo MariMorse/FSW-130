@@ -1,7 +1,7 @@
 import React, {Component} from 'react'
 import '../apps/App.css'
 import {AnimalContextConsumer} from '../bookContext'
-import Animals from '../components/Animals'
+import Animals from '../components/Books'
 
 class App extends Component {
     constructor() {
