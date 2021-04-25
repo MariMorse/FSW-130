@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import '../apps/App.css'
-import {AnimalContextConsumer} from '../animalContext'
+import {AnimalContextConsumer} from '../bookContext'
 import Animals from '../components/Animals'
 
 class App extends Component {

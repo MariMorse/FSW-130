@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {AnimalContextProvider} from "./animalContext"
+import {BookContextProvider} from "./bookContext"
 import App from './apps/App'
 
 
 ReactDOM.render(
-    <AnimalContextProvider>
+    <BookContextProvider>
          <App />
-     </AnimalContextProvider>, 
+     </BookContextProvider>, 
      document.getElementById('root')
 )
