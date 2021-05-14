@@ -1,52 +1,32 @@
-import { createStore } from 'redux'
+import store from './store/configureStore'
+import {addContact, deleteContact} from './store/configureStore'
 
-const initialState = {
-  contacts: []
-}
+store.dispatch(addContact({
+    name: 'Susan Gail',
+    phone: '716-226-3030',
+    email: 'goingcrazy76@hotmail.com'
+}))
 
-export function addContact(contact) {
-  return {
-      type: 'ADD_CONTACT',
-      payload: contact
-  }
-}
+store.dispatch(addContact({
+    name: 'John Alianello',
+    phone: '813-434-5656',
+    email: 'johnalianell1@gmail.com'
+}))
 
-export function deleteContact(contact) {
-  return {
-      type: 'DELETE_CONTACT',
-      payload: contact
-  }
-}
+store.dispatch(addContact({
+    name: 'Donna Cummins',
+    phone: '352-455-6060',
+    email: 'hotmama53@yahoo.com'
+}))
 
-function reducer(state = initialState, action) {
-  switch(action.type) {
-      case 'ADD_CONTACT':
-          return {
-              ...state,
-              contacts: [...state.contacts, action.payload]
-          }
-      case 'DELETE_CONTACT':
-          const updatedContacts = state.contacts.filter(function(contact) {
-              if (action.payload.name === contact.name && 
-                  action.payload.phone === contact.phone &&
-                  action.payload.email === contact.email) {
-                  return false
-              }
-              return true
-          })
-          return {
-              ...state,
-              contacts: updatedContacts
-          }
-      default:
-          return state
-  }
-}
+store.dispatch(deleteContact({
+    name: 'Donald Trump',
+    phone: '614-867-5309',
+    email: 'TrumpDonald2020@gmail.com'
+}))
 
-const store = createStore(reducer)
-
-store.subscribe(() => {
-  console.log(store.getState())
-})
-
-export default store
+store.dispatch(deleteContact({
+    name: 'Marianne Alianello',
+    phone: '614-572-3068',
+    email: 'marianne.morse@bryanuniversity.edu'
+}))
