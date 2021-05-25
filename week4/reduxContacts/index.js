@@ -1,5 +1,5 @@
-import store from './store/configureStore'
-import {addContact, deleteContact} from './store/configureStore'
+import store from '../redux-contacts/src/store/configureStore'
+import {addContact, deleteContact} from '../redux-contacts/src/store/configureStore'
 
 store.dispatch(addContact({
     name: 'Susan Gail',
