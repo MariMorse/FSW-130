@@ -1,5 +1,54 @@
-import store from '../redux-contacts/src/store/configureStore'
-import {addContact, deleteContact} from '../redux-contacts/src/store/configureStore'
+const redux = require("redux");
+
+const initialState = {
+    count: 0,
+    contacts: []
+}
+
+function addContact(contact) {
+    return {
+        type: 'ADD_CONTACT',
+        payload: contact
+    }
+}
+
+function deleteContact(contact) {
+    return {
+        type: 'DELETE_CONTACT',
+        payload: contact
+    }
+}
+
+function reducer(state = initialState, action) {
+    switch(action.type) {
+        case 'ADD_CONTACT':
+            return {
+                ...state,
+                contacts: [...state.contacts, action.payload]
+            }
+        case 'DELETE_CONTACT':
+            const updatedContacts = state.contacts.filter(function(contact) {
+                if (action.payload.name === contact.name && 
+                    action.payload.phone === contact.phone &&
+                    action.payload.email === contact.email) {
+                    return false
+                }
+                return true
+            })
+            return {
+                ...state,
+                contacts: updatedContacts
+            }
+        default:
+            return state
+    }
+}
+
+const store = redux.createStore(reducer)
+
+store.subscribe(() => {
+    console.log(store.getState())
+})
 
 store.dispatch(addContact({
     name: 'Susan Gail',
