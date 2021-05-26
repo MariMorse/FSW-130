@@ -7,19 +7,19 @@ console.log('\n')
 console.log(store.getState().movies)
 
 console.log('add movie ...')
-store.dispatch(movies.addMovie('Soul'))
+store.dispatch(movies.addMovie('Mortal Combat'))
 console.log(store.getState().movies)
 
 console.log('add movie ...')
-store.dispatch(movies.addMovie('The Matrix'))
+store.dispatch(movies.addMovie('Godzilla vs. Kong'))
 console.log(store.getState().movies)
 
 console.log('add movie ...')
-store.dispatch(movies.addMovie('Onward'))
+store.dispatch(movies.addMovie('The Meg'))
 console.log(store.getState().movies)
 
 console.log('delete movie ...')
-store.dispatch(movies.deleteMovie('Soul'))
+store.dispatch(movies.deleteMovie('Mortal Combat'))
 console.log(store.getState().movies)
 
 store.dispatch(movies.moviesViewAll())
@@ -30,19 +30,19 @@ console.log('\n')
 console.log(store.getState().tvShows)
 
 console.log('add tv show ...')
-store.dispatch(tvShows.addTvShow('The Bachelor'))
+store.dispatch(tvShows.addTvShow('Game of Thrones'))
 console.log(store.getState().tvShows)
 
 console.log('add tv show ...')
-store.dispatch(tvShows.addTvShow('Shark Tank'))
+store.dispatch(tvShows.addTvShow('The Sopranos'))
 console.log(store.getState().tvShows)
 
 console.log('add tv show ...')
-store.dispatch(tvShows.addTvShow('General Hospital'))
+store.dispatch(tvShows.addTvShow('Seinfeld'))
 console.log(store.getState().tvShows)
 
 console.log('delete tv show ...')
-store.dispatch(tvShows.deleteTvShow('The Bachelor'))
+store.dispatch(tvShows.deleteTvShow('Game of Thrones'))
 console.log(store.getState().tvShows)
 
 store.dispatch(tvShows.tvShowsViewAll())
