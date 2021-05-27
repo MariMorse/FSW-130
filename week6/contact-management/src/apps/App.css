@@ -3,7 +3,7 @@
 }
 
 body {
-    background-color: antiquewhite;
+    background-color: #b5e7a0;
 }
 
 h2 {
@@ -14,13 +14,15 @@ h2 {
     background-color: whitesmoke;
     width: 600px;
     margin: auto;
-    border: 1px solid gray;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 form {
     width: 425px;
-    background-color: rosybrown;
-    border: 1px solid gray;
+    background-color: #b5e7a0;
+    border: 1px solid black;
+    border-radius: 10px;
     padding: 10px;
     margin: auto;
 }
@@ -28,7 +30,8 @@ form {
 .edit-form {
     background-color: lightgray;
     width: 200px;
-    border: 1px solid gray;
+    border: 1px solid black;
+    border-radius: 10px;
     padding: 10px;
     margin: 5px;
 }
@@ -50,8 +53,9 @@ input[type=text] {
 }
 
 .contact-list {
-    background-color: lightgray;
-    border: 1px solid gray;
+    background-color: #b2b2b2;
+    border: 1px solid black;
+    border-radius: 10px;
     padding: 10px;
     margin: auto;
 }
