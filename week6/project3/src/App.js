@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Movie } from './features/components/Movie';
 import { TvShow } from './features/components/TvShow';
 import { Navbar } from './features/components/Navbar';
+import { Footer } from './features/components/Footer';
 
 import './App.css';
 function App() {
